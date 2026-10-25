@@ -1,6 +1,11 @@
-# Muhammad Azrial — Curriculum Vitae
+# Muhammad Azrial — Website Pribadi
 
-Situs CV pribadi saya, dapat diakses di **https://azrialwork.github.io**
+Website pribadi saya, dapat diakses di **https://azrialwork.github.io**
+
+Ini adalah rumah saya di internet — tempat saya memperkenalkan diri,
+bercerita tentang perjalanan saya, dan berbagi hal-hal yang sedang
+saya jalani. Situs ini **bukan** CV saya; CV saya ada di profil GitHub
+saya di [github.com/azrialwork](https://github.com/azrialwork).
 
 ## Stack
 
@@ -24,9 +29,8 @@ Sengaja dibuat seringan mungkin dan modular agar mudah dibesarkan:
 │   ├── sections/              # Satu file per bagian isi — edit di sini
 │   │   ├── hero.html
 │   │   ├── about.html
-│   │   ├── experience.html
-│   │   ├── education.html
-│   │   ├── skills.html
+│   │   ├── journey.html
+│   │   ├── activities.html
 │   │   └── contact.html
 │   ├── css/                   # Satu file per tanggung jawab tampilan
 │   │   ├── base.css           # Variabel, reset, gaya dasar
@@ -50,7 +54,7 @@ Sengaja dibuat seringan mungkin dan modular agar mudah dibesarkan:
   `<!-- @include "sections/<nama>.html" -->` di `src/index.template.html`.
 - **Menambah halaman baru:** buat `src/<nama>.template.html` — build akan
   menghasilkan `dist/<nama>.html`. Partial di `src/partials/` dapat dipakai
-  ulang di semua halaman.
+  ulang di semua halaman, misalnya untuk halaman blog atau galeri ke depannya.
 - **Menambah gaya / fitur:** tambahkan file baru di `src/css/` atau
   `src/js/`, lalu daftarkan di `src/partials/head.html` (untuk CSS) atau
   impor di `src/js/main.js` (untuk JS).
