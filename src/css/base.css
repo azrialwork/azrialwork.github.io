@@ -1,0 +1,11 @@
+/* base.css — variabel, reset, dan gaya dasar */
+:root{
+  --bg:#f7f8fa; --surface:#ffffff; --text:#1f2937; --muted:#5b6472;
+  --primary:#0f766e; --primary-dark:#115e59; --border:#e5e7eb;
+  --radius:14px; --max:960px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}

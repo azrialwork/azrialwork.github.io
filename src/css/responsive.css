@@ -1,0 +1,16 @@
+/* responsive.css — tampilan mobile dan cetak */
+@media (max-width:700px){
+  .skills-grid{grid-template-columns:1fr}
+  .hero{justify-content:center;text-align:center}
+  .hero-actions,.hero-meta{justify-content:center}
+  .nav-toggle{display:block}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:100%;right:1rem;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;box-shadow:0 10px 30px rgba(0,0,0,.10)}
+  .nav-links.open{display:flex}
+  .site-header .nav{position:relative}
+}
+@media print{
+  .site-header,.hero-actions,.nav-toggle{display:none!important}
+  body{background:#fff}
+  .card{border:none;padding:.4rem 0}
+  main{padding:0}
+}
